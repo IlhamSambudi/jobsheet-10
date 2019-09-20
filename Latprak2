@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Latihan02 {
+
+    public static void main(String[] args) {
+        int search;
+        boolean found = false;
+        int[] nilai = new int[]{8, 90, 56, 90, 87, 76, 42};
+        Scanner masuk = new Scanner(System.in);
+        System.out.print("Nilai yanga akan dicari: ");
+        search = masuk.nextInt();
+        for (int i = 0; i < nilai.length; i++) {
+            if (search == nilai[i]) {
+                found = true;
+                System.out.println("Indeks ke- " + i);
+            }
+        }
+        if (found != true) {
+            System.out.println("nothing~");
+        }
+    }
+}
