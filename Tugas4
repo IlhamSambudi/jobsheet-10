@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Tugas4 {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a = 0, b = 0, c = 0, d = 0, e = 0;
+        String hw = new String();
+        System.out.println("masukkan kalimat: ");
+        hw = in.nextLine();
+        for (int i = 0; i < hw.length(); i++) {
+            if (hw.charAt(i) == 'a') {
+                a++;
+            }
+            if (hw.charAt(i) == 'i') {
+                b++;
+            }
+            if (hw.charAt(i) == 'u') {
+                c++;
+            }
+            if (hw.charAt(i) == 'e') {
+                d++;
+            }
+            if (hw.charAt(i) == 'o') {
+                e++;
+            }
+
+        }
+        System.out.println("a = " + a);
+        System.out.println("i = " + b);
+        System.out.println("u = " + c);
+        System.out.println("e = " + d);
+        System.out.println("o = " + e);
+        System.out.println("total vokal" + (a+b+c+d+e));
+    }
+}
