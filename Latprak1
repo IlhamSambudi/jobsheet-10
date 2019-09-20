@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Latuhan01 {
+
+    public static void main(String[] args) {
+        String search;
+        boolean found = false;
+        String[] siswa = new String[]{"vian", "rafi", "adit", "ilyasa"};
+        Scanner masuk = new Scanner(System.in);
+        System.out.print("Siswa yang akan dicari: ");
+        search = masuk.nextLine();
+        for (String siswa1 : siswa) {
+            if (search.equals(siswa1)) {
+                found = true;
+                break;
+
+            }
+        }
+        if (found == true) {
+
+            System.out.println("Siswa Ada!");
+        } else {
+            System.out.println("Siswa Tidak Ada!");
+        }
+    }
+}
